@@ -71,8 +71,8 @@ def clear
   system("clear") || system("cls")
 end
 
-prompt("Welcome Rock Paper Scissors Lizard Spock!")
-prompt("=========================================")
+prompt("Welcome to Rock Paper Scissors Lizard Spock!")
+prompt("============================================")
 
 prompt("BEST TO 5 WINS! Its you against the machine. Lets get started.")
 lets_go = "Lets go!"
