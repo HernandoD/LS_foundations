@@ -54,16 +54,14 @@ def display_winner(player, computer)
   elsif win?(computer, player)
     prompt("That one goes to the machine.")
   else
-    prompt("Thats a tie. Let's go again.")
+    prompt("That's a tie. Let's go again.")
   end
 end
 
 def display_countdown(rps)
   rps.each do |n|
     puts n.bold.cyan
-    1.upto(1)
     sleep 0.3
-    break if rps.empty?
   end
 end
 
@@ -74,8 +72,8 @@ end
 prompt("Welcome to Rock Paper Scissors Lizard Spock!")
 prompt("============================================")
 
-prompt("BEST TO 5 WINS! Its you against the machine. Lets get started.")
-lets_go = "Lets go!"
+prompt("BEST TO 5 WINS! It's you against the machine. Let's get started.")
+lets_go = "Let's go!"
 puts lets_go.bold
 
 choice = nil
@@ -90,9 +88,9 @@ loop do
     computer_choice = VALID_CHOICE.values.sample
 
     display_countdown(rps)
+    clear
 
     prompt("You chose: #{choice} <> Machine chose: #{computer_choice}")
-    clear
 
     display_winner(choice, computer_choice)
 
